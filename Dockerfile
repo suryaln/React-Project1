@@ -11,4 +11,4 @@ FROM nginx:alpine
 WORKDIR usr/share/nginx/html/
 COPY   --from=build /app/build .
 EXPOSE 80
-CMD ["nginx", "-g", "deamon off;"]
+CMD ["nginx", "-g", "daemon off;"]
